@@ -382,7 +382,7 @@ def load_model(file_name="model.pkl"):
 		built chefboost model
 	"""
 
-	f = open('outputs/rules/'+file_name, 'rb')
+	f = open(file_name, 'rb')
 	model = pickle.load(f)
 
 	#restore modules from its references
